@@ -42,7 +42,7 @@ const Form =()=>{
         <>
          <Navbar/>
         <form>
-            <section>
+            <div className='form-inner'>
                 <div className='input1'><input type="file" id="file" name="file" onChange={(event)=>{setImage(event.target.files[0])}}/></div>
                 <div className='input2'> 
                 <input type="text"  id='author' placeholder='Author' onChange={(event)=>{setPost({...post,name:event.target.value})}}/>
@@ -51,7 +51,7 @@ const Form =()=>{
                 
                 <div className='input3'><input type="text" id="description" placeholder='Description' onChange={(event)=>{setPost({...post,description:event.target.value})}}/></div>
                 <button className='btn' onClick={handlesubmit}>Post</button>
-            </section>
+                </div>
            
         </form>
         </>
