@@ -17,7 +17,7 @@ const Post=()=>{
         .catch((err)=>{
             console.log(err)
         })
-     } )
+     },[all_posts] )
      let k=0;
      for(let i=data.length-1;i>=0;i--){
         all_posts[k]=data[i];
