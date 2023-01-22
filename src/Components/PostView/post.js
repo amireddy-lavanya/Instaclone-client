@@ -28,7 +28,7 @@ const Post=()=>{
         <>
             <Navbar/>
             <div className="all_posts">
-                {all_posts.map((udata)=>{
+        {all_posts.length>0 ? {all_posts.map((udata)=>{
                     return(
                         <section className="post">
                             <section className="post_header">
@@ -47,7 +47,7 @@ const Post=()=>{
                             </section>
                         </section>
                     )
-                })}
+                })} : null }
                   </div>
         </>
     )
