@@ -29,7 +29,7 @@ const Post=()=>{
             <Navbar/>
             <div className="all_posts">
          {all_posts.map((udata)=>{   
-        {udata.length >0 ?
+        udata.length >0 ?
         
                     return(
                         <section className="post">
@@ -48,8 +48,7 @@ const Post=()=>{
                                 <div className="desc"><span className="desc">{udata.description}</span></div>
                             </section>
                         </section>
-                    )
-}:null})} 
+                    ):null })} 
                   </div>
         </>
     )
