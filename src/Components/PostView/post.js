@@ -17,7 +17,7 @@ const Post=()=>{
         .catch((err)=>{
             console.log(err)
         })
-     },[all_posts] )
+     },[] )
      let k=0;
      for(let i=data.length-1;i>=0;i--){
         all_posts[k]=data[i];
@@ -28,7 +28,7 @@ const Post=()=>{
         <>
             <Navbar/>
             <div className="all_posts">
-        {all_posts.length>0 ? {all_posts.map((udata)=>{
+        {all_posts.length > 0 ? {all_posts.map((udata)=>{
                     return(
                         <section className="post">
                             <section className="post_header">
